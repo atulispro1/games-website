@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url(https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        img {
+            display: block;
+            margin: 0 auto 15px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .gender, .checkboxes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: #007BFF;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>REGISTER YOUR ACCOUNT</h1>
+        <h2>Register for Ocean of Games</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu_DyNuPHh3vMkrmgRlUdu2yKQYIwL5CZKwA&s" alt="Ocean of Games">
+        <form action="website.html" method="GET">
+            <label>Username:</label>
+            <input type="text" placeholder="Enter a username" name="username">
+
+            <label>Own password:</label>
+            <input type="password" placeholder="Enter a password" name="password">
+
+            <label>Confirm password:</label>
+            <input type="password" placeholder="Enter password again" name="confirm_password">
+
+            <label>Name:</label>
+            <input type="text" placeholder="Full name" name="name">
+
+            <label>Phone no:</label>
+            <input type="number" placeholder="Enter a phone number" name="phone">
+
+            <label>Gender:</label>
+            <div class="gender">
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+            </div>
+
+            <label>Which type of game mode do you like:</label>
+            <div class="checkboxes">
+                <label><input type="checkbox" name="game_mode[]" value="Adventure"> Adventure</label>
+                <label><input type="checkbox" name="game_mode[]" value="RPG"> RPG (Role Playing Game)</label>
+                <label><input type="checkbox" name="game_mode[]" value="Action"> Action</label>
+                <label><input type="checkbox" name="game_mode[]" value="Open world"> Open world</label>
+                <label><input type="checkbox" name="game_mode[]" value="Horror"> Horror</label>
+            </div>
+
+            <label>Country:</label>
+            <select name="country">
+                <option value="England">England</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="France">France</option>
+                <option value="India">India</option>
+                <option value="Italy">Italy</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Australia">Australia</option>
+                <option value="Japan">Japan</option>
+            </select>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
